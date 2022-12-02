@@ -1,4 +1,15 @@
 @charset "UTF_8";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+:root
+{
+    --font-normal: Arial, verdana, helvetica, sans-serif, 'cursive';
+    --font-p: 'Courgette', 'cursive';
+    --font-t: 'Lobster', 'cursive';
+}
 
 *
 {
@@ -8,6 +19,7 @@
 
 html, body 
 {
+    font-family: var(--font-normal);
     min-height: 100vh;
     background-color: darkgray;
 }
@@ -24,11 +36,15 @@ header h1
 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--font-t);
+    font-size: 3em;
+
 }
 
 header p
 {
     padding-bottom: 50px;
+    font-family: var(--font-p);
 }
 
 a
@@ -49,6 +65,8 @@ section
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font-p);
+    font-size: 4vw;
 }
 
 section.normal
