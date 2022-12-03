@@ -92,9 +92,9 @@ section.imagem
 
 section.imagem > p
 {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.651);
     color: white;
-    width: 400px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.651);
     padding: 10px;
 }
@@ -115,5 +115,5 @@ footer
     background-color: rgba(0, 0, 0, 0.822);
     color: white;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px;
 }
