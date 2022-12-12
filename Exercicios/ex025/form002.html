@@ -4,23 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste Formulário</title>
+    <style>
+        body
+        {
+            background-color: rgb(224, 219, 219);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            background-color: #0470e5;
+            height: 1000px;
+            margin-top:  0px;
+        }
+
+        main > h1
+        {
+            font-size: 3em;
+            margin-top: 0px;
+            padding-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="post"></form>
-    <p>
-        <label for="iusu">Usuário</label>
-        <input type="text" name="usu" id="iusu" required>
-    </p>
-    <p>
-        <label for="isen">Senha</label>
-        <input type="password" name="sen" id="isen" required>
-    </p>
-    
-    <p>
-     <input type="submit" value="Acessar">
-     <input type="reset" value="Limpar">
-    </p>
+    <main>
+        <h1>Facebook</h1>
+        <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+        </p>
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="16" >
+        </p>
+        <p>
+         <input type="submit" value="Acessar">
+         <input type="reset" value="Limpar">
+        </p>
+        </form>
+    </main>
 </body>
 </html>
